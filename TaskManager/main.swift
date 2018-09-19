@@ -8,3 +8,8 @@
 
 import Foundation
 
+//welcoming the user to the task manager
+print("welcome to the task manager")
+let taskManagerMenu = Menu()
+taskManagerMenu.go()
+
