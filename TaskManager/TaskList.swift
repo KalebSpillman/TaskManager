@@ -81,13 +81,13 @@ class List {
         
         //telling the user they have entered an invalid index
         while userInput == nil {
-        
-        print("invalid input. please enter a valid index.")
+            
+            print("invalid input. please enter a valid index.")
             userInput = Int(readLine()!)
         }
         taskArray[userInput!].completed = false
         print("would you like to update the completion date. please enter yes or no.")
-      
+        
         
         
     }
@@ -102,11 +102,13 @@ class List {
         while userInput == nil {
             print("invalid input. please enter a valid index.")
             userInput = Int(readLine()!)
-        
+            
         }
         taskArray.remove(at: userInput!)
         
-        }
     }
+   
+}
+
 
 

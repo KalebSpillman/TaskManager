@@ -27,7 +27,7 @@ class Menu {
     }
     //function to check and see if the user entered valid input
     func validateInput(input: String) -> Bool {
-        let validMenuOptions = Array(1...8)
+        let validMenuOptions = Array(1...9)
         guard let number = Int(input) else {
             return false
         }
@@ -48,7 +48,8 @@ Task Manager
 6. Mark a task as incomplete
 7. Delete a task
 8. Exit Task manager
-please enter a number between 1 and 8
+9. Quit
+please enter a number between 1 and 9
 """)
     }
 //Function allowing the user to quit the application
@@ -83,6 +84,10 @@ please enter a number between 1 and 8
         case "8":
             //exit the task manager
             quit()
+        case "9":
+            //Easter Egg
+            EasterEgg()
+            
         default:
             break
         }
@@ -96,6 +101,51 @@ please enter a number between 1 and 8
             print("Please enter valid input.")
             }
         return userInput!
+    }
+    func EasterEgg () {
+        print("would you like to quit.")
+        let userInput = readLine()
+        while userInput == "yes" || userInput == "no" {
+            print("are you sure")
+            let userInput = readLine()
+            if userInput == "yes" || userInput == "no" {
+                print("are you positive.")
+                let userInput = readLine()
+                if userInput == "yes" || userInput == "no" {
+                    print("Now exiting the application.")
+                    sleep(5)
+                    print("you thought i would let you off that easy. your funny.")
+                    sleep(2)
+                    print("would you like to quit for real this time.")
+                    let userInput = readLine()
+                    if userInput == "yes" || userInput == "no" {
+                        print(" invalid input please enter y or n." )
+                        let userInput = readLine()
+                        if userInput == "y" || userInput == "n" {
+                            print(" unexpected error would you like to print menu.")
+                            let userInput = readLine()
+                            if userInput == "yes" {
+                                print("would you like to quit.")
+                                let userInput = readLine()
+                                sleep(5)
+                                printMenu()
+                                quit()
+                                
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                }
+            }
+            
+            
+            
+        }
+        
+        
+        
     }
 }
 
