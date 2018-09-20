@@ -114,7 +114,7 @@ please enter a number between 1 and 9
                 if userInput == "yes" || userInput == "no" {
                     print("Now exiting the application.")
                     sleep(5)
-                    print("you thought i would let you off that easy. your funny.")
+                    print(" ha you thought.")
                     sleep(2)
                     print("would you like to quit for real this time.")
                     let userInput = readLine()
